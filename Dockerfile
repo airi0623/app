@@ -1,6 +1,7 @@
 FROM ruby:2.7
 RUN apt-get update -qq && apt-get install -y nodejs yarnpkg
 # sudo yum  -y install git make gcc-c++ patch libyaml-devel libffi-devel libicu-devel zlib-devel readline-devel libxml2-devel libxslt-devel ImageMagick ImageMagick-devel openssl-devel libcurl libcurl-devel curl
+# sudo yum -y install mysql56-server mysql56-devel mysql56 mariadb-server mysql-devel
 
 RUN ln -s /usr/bin/yarnpkg /usr/bin/yarn
 # RUN mkdir /app
